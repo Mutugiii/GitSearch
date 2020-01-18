@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from '../user';
+import { GitService } from '../apicalls/git.service';
 
 @Component({
   selector: 'app-body-user',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BodyUserComponent implements OnInit {
 
-  constructor() { }
+  user: User;
+  myUserName = 'Mutugiii';
+  constructor(private httpService:GitService) { }
 
   ngOnInit() {
+    this.httpService.userRequest(this.myUserName);
+    this.user = this.httpService.user
   }
 
 }
