@@ -9,6 +9,7 @@ import { BodyComponent } from './body/body.component';
 import { BodySearchComponent } from './body-search/body-search.component';
 import { BodyUserComponent } from './body-user/body-user.component';
 import { BodyRepoComponent } from './body-repo/body-repo.component';
+import { BodyNavComponent } from './body-nav/body-nav.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { BodyRepoComponent } from './body-repo/body-repo.component';
     BodyComponent,
     BodySearchComponent,
     BodyUserComponent,
-    BodyRepoComponent
+    BodyRepoComponent,
+    BodyNavComponent,
   ],
   imports: [
     BrowserModule,
