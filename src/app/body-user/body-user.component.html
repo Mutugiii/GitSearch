@@ -1,2 +1,21 @@
-<div>User</div>
-<!-- <p>{{user.fullName}}</p> -->
+<hr style="border: 1px solid #2b3137">
+<hr style="border: 1px solid #2b3137">
+<div class="container">
+    <img src="{{user.avatar}}" alt="User Avatar" height="250px" width="270px">
+    <br>
+    <div>
+        <div>
+            <div>{{user.fullName}}</div>
+            <span style="font-size: small;">{{user.location}}</span>
+        </div>
+        <p class="aboutTitle" style="text-decoration: underline;">About</p>
+        <div>
+            <span class="aboutTitle">Username:</span> {{user.userName}} <br>
+            <span class="aboutTitle">Bio:</span> {{user.bio}}
+        </div>
+        <div>
+            <span><span class="aboutTitle">Pubic Repositories:</span> {{user.repos}}</span>
+            <br>
+            <span><span class="aboutTitle">Joined Github:</span> {{user.joined}}</span>
+        </div>
+    </div>
