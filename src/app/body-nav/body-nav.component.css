@@ -1,0 +1,10 @@
+* {
+    font-size: 25px;
+    font-family: 'Acme', sans-serif;
+}
+
+.navbar-inverse{
+    opacity: 0.9;
+    background-color: #2b3137;
+    color: white;
+}
