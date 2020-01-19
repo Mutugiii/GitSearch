@@ -60,17 +60,11 @@ export class GitService {
     }
     let promise = new Promise((resolve, reject) => {
       this.http.get<RepoApiResponse>(`${environment.gitUrl}${searchName}${environment.repoAccess}`).toPromise().then(response => {
-        this.repo.name = response.name
-        this.repo.description = response.description
-        this.repo.updated = response.updated_at
-        this.repo.link = response.html_url
+        this.repo = response;
 
         resolve()
       }, error => {
-        this.repo.name = ''
-        this.repo.description = ''
-        this.repo.updated = new Date()
-        this.repo.link = ''
+        reject(error)
       })
     })
   }
