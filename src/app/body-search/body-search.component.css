@@ -1,4 +1,8 @@
 * {
-    background-color: #2b3137;
-    color: white;
+    color: #2b3137;
+    font-family: 'Acme', sans-serif;
+}
+
+.info {
+    font-size: 2rem;
 }
