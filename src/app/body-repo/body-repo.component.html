@@ -1,1 +1,8 @@
-<div>Repository</div>
+<div class="container" *ngFor='let reo of httpService.repo; let i = index;'>
+    <hr>
+    {{httpService.repo[i].name}} <br>
+    {{httpService.repo[i].description}} <br>
+    Last Updated: {{httpService.repo[i].updated_at}} <br>
+    <!-- {{httpService.repo[i].html_url}} -->
+    <hr>
+</div>
