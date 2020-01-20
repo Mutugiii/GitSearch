@@ -11,7 +11,7 @@ import { BodySearchComponent } from './body-search/body-search.component';
 import { BodyUserComponent } from './body-user/body-user.component';
 import { BodyRepoComponent } from './body-repo/body-repo.component';
 import { BodyNavComponent } from './body-nav/body-nav.component';
-import { from } from 'rxjs';
+import { WrongRouteComponent } from './wrong-route/wrong-route.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +22,7 @@ import { from } from 'rxjs';
     BodyUserComponent,
     BodyRepoComponent,
     BodyNavComponent,
+    WrongRouteComponent,
   ],
   imports: [
     BrowserModule,
