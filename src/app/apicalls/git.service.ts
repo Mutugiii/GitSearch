@@ -49,6 +49,7 @@ export class GitService {
         reject(error)
       })
     })
+    return promise;
   }
 
   repoRequest = (searchName) => {
@@ -67,6 +68,7 @@ export class GitService {
         reject(error)
       })
     })
+    return promise;
   }
 
 
