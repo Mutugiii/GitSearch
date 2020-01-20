@@ -7,7 +7,7 @@ import { BodyRepoComponent } from './body-repo/body-repo.component';
 const routes: Routes = [
   {path:'user', component: BodyUserComponent},
   {path:'repos', component: BodyRepoComponent},
-  { path: '', redirectTo:"/user", pathMatch:"full"},
+  { path: '', redirectTo:"/Mutugi", pathMatch:"full"},
 
 ];
 
