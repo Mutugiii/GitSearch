@@ -1,4 +1,4 @@
-<div class="container" *ngFor='let reo of httpService.repo; let i = index;'>
+<div class="container" *ngFor='let repo of httpService.repo; let i = index;'>
     <hr style="border: 1px solid #2b3137">
     <span class="aboutTitle">Title:</span> {{httpService.repo[i].name}} <br>
     {{httpService.repo[i].description}} <br>
