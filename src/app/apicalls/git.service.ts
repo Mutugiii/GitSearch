@@ -37,19 +37,11 @@ export class GitService {
         this.user.joined = response.created_at
 
         resolve()
+        return promise;
       }, error => {
-        this.user.avatar = ''
-        this.user.userName = ''
-        this.user.location = ''
-        this.user.fullName = ''
-        this.user.bio = ''
-        this.user.repos = 0
-        this.user.joined = new Date()
-
-        reject(error)
+        return null;
       })
     })
-    return promise;
   }
 
   repoRequest = (searchName) => {
@@ -60,7 +52,7 @@ export class GitService {
       updated_at: Date
     }
     let promise = new Promise((resolve, reject) => {
-      this.http.get<RepoApiResponse>(`${environment.gitUrl}${searchName}${environment.repoAccess}`).toPromise().then(response => {
+      this.http.get<RepoApiResponse>(`${environment.gitUrl}${searchName}${environment.repoAccess}${environment.accessToken}`).toPromise().then(response => {
         this.repo = response;
 
         resolve()
@@ -70,6 +62,4 @@ export class GitService {
     })
     return promise;
   }
-
-
 }
