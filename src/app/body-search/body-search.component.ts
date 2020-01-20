@@ -9,10 +9,10 @@ import { OtherUser } from '../other-user';
 export class BodySearchComponent implements OnInit {
 
   user = new OtherUser('');
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
-  }
+  }  
 
   newUser: string = ""
 
