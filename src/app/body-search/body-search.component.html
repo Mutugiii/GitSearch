@@ -1,5 +1,9 @@
 <p class="info">Search the leading development platform built for developers</p>
 <div class="navbar-default sticky-top">
-    <input type="text" name="Search" id="searchGit" placeholder="Search for users!!">
-    <button type="submit" class="btn">Search</button>
+    <form #userForm='ngForm' (ngSubmit)='submitName()'>
+        <input type="text" name="Search" id="searchGit" [(ngModel)]='user.userName' name='user'
+            #name='ngModel' placeholder="Search for users!!" required>
+        <button type="submit" class="btn">Search</button>
+        {{user.userName}}
+    </form>
 </div>

@@ -10,12 +10,18 @@ import { GitService } from '../apicalls/git.service';
 export class BodyUserComponent implements OnInit {
 
   user: User;
-  myUserName = 'Mutugiii';
+  myUserName = 'Mutugiii'; 
+
   constructor(private httpService:GitService) { }
 
   ngOnInit() {
-    this.httpService.userRequest(this.myUserName);
+    let retrievedData = localStorage.getItem('name-data')
+    // let parsedData= JSON.stringify(retrievedData);
+
+    this.httpService.userRequest(retrievedData);
     this.user = this.httpService.user
+
+    // this.ngOnInit()
   }
 
 }

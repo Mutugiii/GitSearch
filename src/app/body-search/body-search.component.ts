@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { OtherUser } from '../other-user';
 
 @Component({
   selector: 'app-body-search',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BodySearchComponent implements OnInit {
 
+  user = new OtherUser('');
   constructor() { }
 
   ngOnInit() {
   }
 
+  newUser: string = ""
+
+  submitName(){
+    if(this.newUser == "") {
+      localStorage.setItem('name-data', this.user.userName)
+    }
+  }
 }
