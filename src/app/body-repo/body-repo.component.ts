@@ -11,10 +11,12 @@ export class BodyRepoComponent implements OnInit {
 
   repo:Repository;
   myUserName = 'Mutugiii';
+  retrievedData:string;
   constructor(public httpService:GitService) { }
 
   ngOnInit() {
-    this.httpService.repoRequest(this.myUserName)
+    this.retrievedData = localStorage.getItem('name-data')
+    this.httpService.repoRequest(this.retrievedData)
   }
 
 }
