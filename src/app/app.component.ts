@@ -9,12 +9,12 @@ import { NgxUiLoaderService } from 'ngx-ui-loader';
 export class AppComponent {
   title = 'GitSearch';
   constructor(private ngxService: NgxUiLoaderService) { }
-  
+
   ngOnInit(){
     this.ngxService.start(); // start foreground spinner of the master loader with 'default' taskId
     // Stop the foreground loading after 5s
     setTimeout(() => {
       this.ngxService.stop(); // stop foreground spinner of the master loader with 'default' taskId
-    }, 5000);
+    }, 1500);
   }
 }
