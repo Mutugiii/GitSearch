@@ -47,4 +47,4 @@ Thumbs.db
 
 
 # Access Token
-/src/app/environments/environment.ts
+/src/app/environments/environment.prod.ts
