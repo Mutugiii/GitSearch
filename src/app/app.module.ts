@@ -12,6 +12,7 @@ import { BodyUserComponent } from './body-user/body-user.component';
 import { BodyRepoComponent } from './body-repo/body-repo.component';
 import { BodyNavComponent } from './body-nav/body-nav.component';
 import { WrongRouteComponent } from './wrong-route/wrong-route.component';
+import { DatePipe } from './date.pipe';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { WrongRouteComponent } from './wrong-route/wrong-route.component';
     BodyRepoComponent,
     BodyNavComponent,
     WrongRouteComponent,
+    DatePipe,
   ],
   imports: [
     BrowserModule,
