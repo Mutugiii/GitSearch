@@ -11,7 +11,7 @@ export class DatePipe implements PipeTransform {
       let savedTime:any= new Date(value);
       const seconds = Math.floor((today - savedTime) / 1000);
       if(seconds < 30) {
-        return 'Just Now';
+        return '';
       }
       const timeIntervals = {
         'year': 31536000,
