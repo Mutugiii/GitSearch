@@ -2,6 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { NgProgressModule } from '@ngx-progressbar/core';
+import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
+import { NgxUiLoaderModule } from  'ngx-ui-loader';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -32,7 +35,10 @@ import { HoverDirective } from './hover.directive';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule 
+    FormsModule,
+    NgProgressModule.forRoot(),
+    NgProgressHttpClientModule,
+    NgxUiLoaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
