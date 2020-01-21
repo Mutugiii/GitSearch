@@ -1,8 +1,9 @@
+<ng-progress></ng-progress>
 <div class="container" *ngFor='let repo of httpService.repo; let i = index;' #repoComponent>
     <hr style="border: 1px solid #2b3137">
     <span class="aboutTitle">Title:</span> {{httpService.repo[i].name}} <br>
     {{httpService.repo[i].description}} <br>
-    <span class="aboutTitle">Last Updated:</span> {{httpService.repo[i].updated_at}} <br>
+    <span class="aboutTitle">Last Updated:</span> {{httpService.repo[i].updated_at | date}} <br>
     <!-- {{httpService.repo[i].html_url}} -->
     <hr style="border: 1px solid #2b3137">
 </div>
