@@ -36,6 +36,7 @@ export class GitService {
         this.user.repos = response.public_repos
         this.user.joined = response.created_at
 
+        
         resolve()
         return promise;
       }, error => {
