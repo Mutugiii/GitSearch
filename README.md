@@ -1,4 +1,6 @@
-# Quotes
+[![codebeat badge](https://codebeat.co/badges/1fa62ae3-4c36-468d-aae5-84afce65801a)](https://codebeat.co/projects/github-com-mutugiii-gitsearch-master)
+
+# GitSearch
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.14
 
@@ -18,7 +20,7 @@ An angular app to search for profiles on github. It consumes the github api. A u
 
 # Prerequisites
 
-To work with Quotes you need to have some few preresuisites.
+To work with GitSearch you need to have some few preresuisites.
 
 This include the following mentioned however if you dont have the set below 
 
@@ -43,11 +45,11 @@ If you dont have this requirements you could use the link above to help with the
 
 2. You will also need a Webpage URL to load in URL's:
 
-3. To get to use **QUOTES** fist you need to get to the Quotes-Angular repository. 
+3. To get to use **GitSearch** fist you need to get to the GitSearch-Angular repository. 
 
 Link:-> ```https://github.com/Mutugiii/GitSearch```
 
-4. From there you can access Quotes.
+4. From there you can access GitSearch.
 
 5. **Clone** or **Download project ZIP** the project.
 
@@ -69,7 +71,7 @@ Link:-> ```https://github.com/Mutugiii/GitSearch```
 
     To specify port use --port flag 
 
-10. This will load for you Quotes as long as your requirements are satisfied.
+10. This will load for you GitSearch as long as your requirements are satisfied.
 
 
 # TECHNOLOGIES USED
