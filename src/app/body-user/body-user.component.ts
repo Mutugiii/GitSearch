@@ -12,6 +12,7 @@ export class BodyUserComponent implements OnInit {
   user: User;
   retrievedData:string;
   customData:string;
+  persistedArr:any;
   @ViewChild("myComponent", {static: false})divView:ElementRef;
   constructor(private httpService:GitService) {}
 
@@ -20,7 +21,6 @@ export class BodyUserComponent implements OnInit {
     // let parsedData= JSON.stringify(retrievedData);
     this.httpService.userRequest(this.retrievedData);
     this.user = this.httpService.user
-    
     
     // reload when local storage changes
     let setItem = Storage.prototype.setItem;
