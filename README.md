@@ -3,6 +3,7 @@
 # GitSearch
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.14
+Here is a [Link] (https://github.com/Mutugiii/GitSearch) to the project
 
 # DESCRIPTION
 
@@ -47,7 +48,7 @@ If you dont have this requirements you could use the link above to help with the
 
 3. To get to use **GitSearch** fist you need to get to the GitSearch-Angular repository. 
 
-Link:-> ```https://github.com/Mutugiii/GitSearch```
+    [Link] (https://github.com/Mutugiii/GitSearch)
 
 4. From there you can access GitSearch.
 
@@ -87,5 +88,11 @@ Link:-> ```https://github.com/Mutugiii/GitSearch```
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+
+## Author
+---
+
+The Project is done by Mutugi Mutuma. For any inquiries & possible changes, create a pull request or contact me via email
+
 ## License
-MIT
+ The project is licensed under the MIT License
