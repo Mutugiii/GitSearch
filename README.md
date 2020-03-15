@@ -3,7 +3,7 @@
 # GitSearch
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.14
-Here is a [Link] (https://github.com/Mutugiii/GitSearch) to the project
+Here is a [Link](https://github.com/Mutugiii/GitSearch) to the project
 
 # DESCRIPTION
 
@@ -33,12 +33,13 @@ This include the following mentioned however if you dont have the set below
 
 - Typescript
 
-- Terminal
+- Angular Cli
 
 If you dont have this requirements you could use the link above to help with the installation guide.
 
 
-# **SETUP/INSTALLATION.**
+## SETUP
+---
 
 **To work With this cli {follow the below instructions for set up.}**
 
@@ -85,14 +86,16 @@ If you dont have this requirements you could use the link above to help with the
 
 ## Development server
 ---
-
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 
 ## Author
 ---
+Mutugi Mutuma.
 
-The Project is done by Mutugi Mutuma. For any inquiries & possible changes, create a pull request or contact me via email
+## Contributing
+---
+For any inquiries & possible changes, create a pull request or open an issue
 
 ## License
  The project is licensed under the MIT License
