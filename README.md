@@ -49,7 +49,7 @@ If you dont have this requirements you could use the link above to help with the
 
 3. To get to use **GitSearch** fist you need to get to the GitSearch-Angular repository. 
 
-    [Link] (https://github.com/Mutugiii/GitSearch)
+    [Link](https://github.com/Mutugiii/GitSearch)
 
 4. From there you can access GitSearch.
 
